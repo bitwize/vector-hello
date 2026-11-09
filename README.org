@@ -1,0 +1,24 @@
+#+TITLE: Vector Hello World
+#+AUTHOR: Jeff Read <bitwize@gmail.com>
+#+DATE: <2026-11-08 Sun>
+
+This is a simple program which just displays the words "HELLO WORLD"
+on the screen in six fruity colors. It's a bit animated too, the words
+move in from the edges of the screen to the center. I wrote it for an
+introductory video in a series I'm planning on programming (by hand,
+without AI assistance). It conceptually uses the same engine as my
+game [[https://github.com/bitwize/cosmic-sweep][Cosmic Sweep]].
+
+X11 is required, as is [[https://gambitscheme.org][Gambit]] 4.9.8 or later.
+
+To use:
+
+In your shell type:
+
+: gsc -ld-options '-lX11' vector-hello.scm
+: gsi
+
+At the Gambit prompt:
+
+: (load "vector-hello")
+: (main)
